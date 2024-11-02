@@ -35,6 +35,9 @@
           color: #e14eca;
           font-size: 25px;
         }
+
+       
+
   </style>
   <!-- BLK• CSS -->
   <link type="text/css" href="assets/css/blk-design-system.min.css" rel="stylesheet">
@@ -44,7 +47,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
       <div class="container">
         <div>
-          <img src="assets/img/logo.svg" alt="Rounded image" style="width: 35px; margin-right: 35px;">
+          <img src="assets/img/logo.png" alt="Rounded image" style="width: 35px; margin-right: 35px;">
         </div>  
           <a class="navbar-brand" href="#">Paradigma Orientado a Eventos</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -145,28 +148,343 @@
         </div>
       </div>
 
-      <div class="section">
+      <div class="section section-pagination">
+        <img src="assets/img/path4.png" class="path">
         <div class="container">
           <div class="typography">
             <h1>
-              <span>Como surgiu e quem inventou</span></h1>
+              Introdução ao Paradigma Orientado a Eventos
+            </h1>
           </div>
-          <div class="row justify-content-between align-items-center">
-            <div class="col-lg-5 mb-5 mb-lg-0 ">
-              <p class="text-white mt-4" style="font-size: 20px;">Segundo Simon Thompson, em seu livro Haskell: The Craft of Functional Programming (ou A Arte da Programação Funcional), paradigmas de programação são formas ou técnicas de representar situações do mundo real ou imaginário usando um computador. Cada paradigma fornece diferentes ferramentas para construir modelos e permite pensar nos problemas de diversas maneiras, resolvendo-os da forma mais adequada.</p>
-            </div>
-            <div class="col-lg-6">
-              <div class="tab-pane" id="link6" style="width: 500px;">
-                <img src="assets/img/Simon-Thompson.jpg" alt="Rounded image">
-                <div class="typography-line">
-                  <p class="text-primary" style="font-size: 20px; margin-top: 20px;">
-                    - Simon Thompson</p>
-                </div>
+          <br><br>
+            <div class="col-md-15 ml-auto">
+              <div class="mb-5">
+                <small class="text-uppercase font-weight-bold" style="font-size: 25px;">Definição do Paradigma</small>
               </div>
+              <div class="typography">
+                <h2>
+                  <small>O paradigma orientado a eventos é uma abordagem de programação
+                    onde o fluxo de controle é guiado por eventos. Em contraste com a
+                    programação procedural, que segue uma sequência linear de instruções,
+                    ou a programação orientada a objetos, que organiza o código em objetos,
+                    a programação orientada a eventos é essencialmente reativa. Isso significa
+                    que, em vez de executar um conjunto fixo de comandos, um programa
+                    espera por eventos, que podem ser ações do usuário, mudanças de estado
+                    em um sistema ou mensagens de outros programas, para então reagir a
+                    eles.<br>
+                    Um ditado muito usado para representar esse paradigma é o <b>Princípio de
+                    Hollywood:</b> “Não nos chame; nós chamaremos você.”<br>
+                    Imagine um aplicativo de calendário. Em vez de seguir um fluxo linear de
+                    comandos, ele aguarda ações como &quot;adicionar um evento&quot; ou &quot;remover
+                    um lembrete&quot;. Quando o usuário clica em &quot;adicionar&quot;, um evento é
+                    disparado, e o aplicativo responde a esse evento de maneira apropriada,
+                    atualizando a interface do usuário.</small>
+                </h2>
+              </div>
+              <br>
+              <div class="mb-5">
+                <small class="text-uppercase font-weight-bold" style="font-size: 25px;">História e Evolução</small>
+              </div>
+              <div class="typography">
+                <h2>
+                  <small>A programação orientada a eventos emergiu das necessidades de sistemas
+                    de controle automático e das interações homem-máquina. Nas décadas
+                    de 1950 e 1960, com o avanço das tecnologias de computação, começou a
+                    se desenvolver a ideia de que sistemas deveriam ser reativos e interativos.<br>
+                    Um marco significativo foi o desenvolvimento das interfaces gráficas de
+                    usuário (GUI), que permitiram interações mais intuitivas e naturais. O
+                    Xerox PARC (Palo Alto Research Center) foi pioneiro nesse movimento,
+                    criando a interface do Alto, que influenciou fortemente a interface gráfica
+                    moderna.<br>
+                    Inicialmente, a interação era puramente por comandos de texto. Com o
+                    advento das GUIs, os usuários começaram a interagir com elementos
+                    visuais, como botões e menus. Isso exigia um modelo que pudesse lidar
+                    com uma variedade de eventos de entrada do usuário.</small>
+                </h2>
+              </div>
+              <br>
+              <div class="mb-5">
+                <small class="text-uppercase font-weight-bold" style="font-size: 25px;">Importância no Desenvolvimento Moderno</small>
+              </div>
+              <div class="typography">
+                <h2>
+                  <small>Nos dias atuais, a programação orientada a eventos é fundamental para o
+                    desenvolvimento de software, especialmente em aplicações web, móveis
+                    e sistemas distribuídos. Sua relevância se manifesta de diversas formas:</small>
+                </h2>
+                <ul>
+                  <li style="font-size: 25px;">Desenvolvimento Web: A interatividade em páginas web modernas
+                    é amplamente baseada em eventos, como cliques, movimentos do
+                    mouse e entradas de teclado.</li>
+                  <li style="font-size: 25px;">Aplicativos Móveis: Aplicativos de smartphones dependem de
+                    eventos para interagir com o usuário, como toques e gestos.</li>
+                  <li style="font-size: 25px;">Sistemas Distribuídos: Em ambientes onde múltiplos serviços e
+                    microserviços operam, a comunicação orientada a eventos permite
+                    que eles operem de maneira assíncrona e eficiente.</li>
+                </ul>
+              </div>
+              <br>
+              <div class="mb-5">
+                <small class="text-uppercase font-weight-bold" style="font-size: 25px;">Conceitos Fundamentais</small>
+              </div>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Eventos e Delegados</li>
+                <img src="assets/img/path1.png" class="path">
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>No contexto da programação orientada a eventos, eventos são sinais que
+                    indicam que algo ocorreu. Por exemplo, um evento pode ser o clique de
+                    um botão ou a finalização de um download.<br>
+                    Delegados são uma forma de encapsular referências a métodos. Em
+                    linguagens como C#, um delegado pode ser visto como um ponteiro de
+                    função que permite que métodos sejam passados como parâmetros.<br>
+                    Exemplo Prático: Em C#, você pode ter um delegado que é acionado
+                    quando um botão é clicado. O método que lida com o evento é associado
+                    ao delegado, permitindo que a ação correta seja executada quando o
+                    evento ocorre.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Listeners e Handlers</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>Listeners (ou ouvintes) são componentes que “escutam” eventos
+                    específicos e reagem quando esses eventos ocorrem. Handlers (ou
+                    manipuladores) são os métodos que são invocados quando um evento é
+                    detectado. Em conjunto, eles formam a base da lógica de resposta a
+                    eventos.<br>
+                    Exemplo Prático: Se um usuário clicar em um botão, um listener detectará
+                    o clique e chamará um handler que, por exemplo, exibirá uma mensagem
+                    de boas-vindas.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Modelo de Assincronismo</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>O conceito de programação assíncrona é fundamental na arquitetura
+                    orientada a eventos. Isso se refere à capacidade de um programa iniciar
+                    uma tarefa e continuar sua execução sem esperar que essa tarefa seja
+                    concluída.<br>
+                    Essa abordagem permite que o sistema mantenha um desempenho
+                    eficiente, especialmente em aplicações que realizam operações de
+                    entrada e saída (I/O), como chamadas de rede ou leitura de arquivos,
+                    onde as respostas podem demorar. <br>
+                    Exemplo Prático: Em um aplicativo web, ao enviar um formulário, a
+                    aplicação pode continuar respondendo a outros eventos, como cliques em
+                    botões, enquanto aguarda a resposta do servidor sobre o envio do
+                    formulário.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Callbacks</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>Um callback é uma função passada como argumento para outra função,
+                    sendo executada após algum tipo de operação ser concluída. É uma
+                    técnica comum em programação assíncrona, especialmente em
+                    linguagens como JavaScript.<br>
+                    Quando a função principal termina sua execução ou atinge um ponto
+                    específico, ela &quot;chama de volta&quot; a função passada como argumento.<br>
+                    Amplamente usado em APIs e bibliotecas de JavaScript, permitindo que o
+                    código continue a ser executado sem aguardar o término de operações
+                    demoradas, como chamadas de rede ou acesso ao sistema de arquivos.</small>
+                </h2>
+              </div>
+              <br><br> 
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Promises</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>Uma Promise é um objeto que representa a eventual conclusão (ou falha)
+                    de uma operação assíncrona e seu resultado. Ela substitui a necessidade
+                    de múltiplos callbacks, facilitando o controle do fluxo assíncrono.<br>
+                    Uma promise pode estar em três estados: pendente (em execução),
+                    resolvida (concluída com sucesso) ou rejeitada (falha). Ela oferece
+                    métodos como “.then()” e “.catch()” para manipular o resultado ou erro.<br>
+                    Melhora a legibilidade e organização do código assíncrono, evitando o
+                    “callback hell” (um aninhamento excessivo de callbacks) e proporcionando
+                    uma forma mais linear de lidar com operações não-bloqueantes.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Observables</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>Um Observable é uma abstração que representa uma fonte de dados que
+                    emite valores ao longo do tempo, permitindo a execução de operações
+                    assíncronas de forma reativa. É uma parte central de bibliotecas como
+                    RxJS (Reactive Extensions).<br>
+                    Um Observable pode emitir múltiplos valores ao longo do tempo
+                    (diferente de uma Promise, que só resolve ou rejeita uma vez), e os
+                    Observers podem se inscrever ou desinscrever para receber ou deixar de
+                    receber esses valores conforme são emitidos, reagindo a eventos.<br>
+                    Amplamente utilizado em programação reativa, um paradigma que lida
+                    com fluxos de dados de forma assíncrona. Os Observables são
+                    especialmente úteis para manipulação de eventos em tempo real, como
+                    cliques de usuário, dados de sensores e fluxos de rede.</small>
+                </h2>
+              </div>
+              <br><br>
+              <hr>
+              <br><br>
+              <div class="mb-5">
+                <small class="text-uppercase font-weight-bold" style="font-size: 25px;">Tecnologias e Ferramentas Relacionadas</small>
+              </div>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">JavaScript</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>JavaScript é uma linguagem de programação que desempenha um papel
+                    central na web, permitindo a manipulação de eventos na interface do
+                    usuário. Por meio de manipuladores de eventos, os desenvolvedores
+                    podem definir como um aplicativo deve reagir a interações do usuário,
+                    como cliques e teclas pressionadas.<br>
+                    Exemplo Prático: Ao clicar em um botão &quot;Enviar&quot;, um evento é disparado,
+                    e um manipulador de eventos pode ser definido para validar os dados do
+                    formulário antes de enviá-los ao servidor.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Node.js e o Modelo Event Loop</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>Node.js é uma plataforma de desenvolvimento que utiliza um modelo de
+                    event loop, permitindo a execução de operações I/O assíncronas e não
+                    bloqueantes. Isso significa que Node.js pode lidar com múltiplas
+                    requisições simultaneamente, sem bloquear o fluxo de execução.<br>
+                    Exemplo Prático: Em um servidor Node.js, ao receber uma solicitação de
+                    um cliente, ele pode iniciar a leitura de um arquivo, continuar
+                    processando outras solicitações enquanto aguarda a leitura do arquivo ser
+                    concluída, e então retornar a resposta.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">C# e a Programação com Delegados e Eventos</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>C# é uma linguagem que possui suporte nativo para programação
+                    orientada a eventos. Com a utilização de delegados, os desenvolvedores
+                    podem criar eventos e manipuladores que definem como um programa
+                    deve reagir a diferentes situações.<br>
+                    Ao criar uma aplicação de desktop por exemplo, um desenvolvedor pode
+                    definir um evento que é acionado quando um usuário clica em um botão
+                    de “jogar”, associando um método de execução de lobby a esse evento de
+                    clique.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Async e Await</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>A programação assíncrona em C# utiliza as palavras-chave async e await
+                    para facilitar a execução de tarefas de maneira não bloqueante. Isso é
+                    particularmente útil em aplicações que requerem alta responsividade e
+                    eficiência.<br>
+                    Ao realizar uma chamada de API, um desenvolvedor pode usar await para
+                    que o programa continue executando outras tarefas enquanto aguarda a
+                    resposta da API.</small>
+                </h2>
+              </div>
+              <br><br>
+              <hr>
+              <br><br>
+              <div class="mb-5">
+                <small class="text-uppercase font-weight-bold" style="font-size: 25px;">Aplicações e Casos de Uso</small>
+              </div>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Aplicações Web e Mobile</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>Frameworks modernos como React, Angular e Flutter utilizam
+                    programação orientada a eventos para construir interfaces dinâmicas e
+                    responsivas. A interatividade do usuário é alcançada através da
+                    manipulação de eventos que atualizam a interface em tempo real.<br>
+                    Em um aplicativo React, a alteração de um campo de entrada pode
+                    acionar um evento que atualiza o estado do aplicativo e,
+                    consequentemente, re-renderiza a interface para refletir a nova
+                    informação.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Sistemas Distribuídos e Microservices</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>Em sistemas distribuídos, a comunicação entre microserviços
+                    frequentemente é baseada em eventos. Isso permite que os serviços
+                    operem de forma autônoma e escalável, reagindo a eventos que são
+                    produzidos por outros serviços sem depender de chamadas diretas. <br>
+                    Um sistema de gerenciamento de pedidos pode ter um microserviço de
+                    pagamentos que, ao receber um evento de &quot;pedido confirmado&quot;, aciona
+                    outro serviço para processar o pagamento.</small>
+                </h2>
+              </div>
+              <br><br>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Event-Driven Architecture (EDA)</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>A arquitetura orientada a eventos (EDA) é um modelo de desenvolvimento
+                    de sistemas que se concentra na produção, detecção e consumo de
+                    eventos. EDA é especialmente útil em sistemas distribuídos e aplicações
+                    em grande escala, onde a comunicação entre componentes deve ser
+                    eficiente e escalável.<br>
+                    Um sistema de e-commerce pode usar EDA para processar eventos de
+                    pedidos, onde diferentes serviços (como estoque, pagamento e envio)
+                    reagem a eventos de forma independente.</small>
+                </h2>
+              </div>
+              <br><br>
+              <hr>
+              <br><br>
+              <div class="mb-5">
+                <small class="text-uppercase font-weight-bold" style="font-size: 25px;">Boas Práticas</small>
+              </div>
+              <ul>
+                <li style="font-size: 25px; color: #e14eca;">Tratamento de Erros e Debugging</li>
+              </ul>
+              <div class="typography">
+                <h2>
+                  <small>Lidar com erros em aplicações orientadas a eventos pode ser desafiador,
+                    especialmente devido à natureza assíncrona das operações.<br>
+                    Estrategicamente, é essencial implementar técnicas de debugging eficazes
+                    e gerenciamento de exceções.</small>
+                </h2>
+              </div>
+              <div class="mb-5">
+                <small class="text-uppercase font-weight-bold" style="font-size: 25px; color: #e14eca;">Estratégias:</small>
+              </div>
+              <ul>
+                <li style="font-size: 25px;"><b>Logging:</b> Registre eventos e mensagens de erros para facilitar a
+                  identificação de problemas.</li>
+                <li style="font-size: 25px;"><b>Testes:</b> Realize testes unitários e de integração para garantir que
+                  cada parte do sistema responda corretamente a eventos.</li>
+              </ul>
             </div>
-          </div>
         </div>
-      </div>
+      </div> 
+
 
 
       <div class="section section-pagination">
@@ -222,11 +540,6 @@
                         Exemplo
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#link6" role="tablist">
-                        Código
-                      </a>
-                    </li>
                   </ul>
                 </div>
                 <div class="card-body">
@@ -247,9 +560,6 @@
                         3. <b style="color: #e14eca;">O manipulador de evento</b>no código valida os dados do formulário e salva o cliente.</br>
                         4. O sistema exibe uma mensagem de sucesso se a operação for bem-sucedida.</br>
                       </p>
-                    </div>
-                    <div class="tab-pane" id="link6">
-                      <img src="assets/img/cod_ex.png" alt="Rounded image">
                     </div>
                   </div>
                 </div>
@@ -276,7 +586,7 @@
                       <div class="typography">
                         <h2>
                           <br>
-                           1. <small></small>
+                          1. <small></small>
                           <br>
                           2. <small></small>
                           <br>
@@ -992,9 +1302,7 @@ namespace CompararNumeros
             </div>
           </div>
         </div>
-      </footer>
-      
-      
+      </footer> 
       
   <!-- Core -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
