@@ -59,16 +59,16 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Paradigma</a>
+                <a class="nav-link" href="#basic-elements">Paradigma</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Linguagem</a>
+                <a class="nav-link" href="#linguagem">Linguagem</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Artigo</a>
+                <a class="nav-link" href="#basic-elements artigo">Artigo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Referências</a>
+                <a class="nav-link" href="#referencias">Referências</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,10 +76,11 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Filipe</a>
-                  <a class="dropdown-item" href="#">Freitas</a>
+                  <a class="dropdown-item" href="#">Gabriel</a>
                   <a class="dropdown-item" href="#">Alano</a>
                   <a class="dropdown-item" href="#">Lucas</a>
                   <a class="dropdown-item" href="#">Matheus</a>
+                  <a class="dropdown-item" href="#">Kauan</a>
                   <a class="dropdown-item" href="#">Daniel</a>
                 </div>
               </li>
@@ -163,22 +164,38 @@
               </div>
               <div class="typography">
                 <h2>
-                  <small>O paradigma orientado a eventos é uma abordagem de programação
-                    onde o fluxo de controle é guiado por eventos. Em contraste com a
-                    programação procedural, que segue uma sequência linear de instruções,
-                    ou a programação orientada a objetos, que organiza o código em objetos,
-                    a programação orientada a eventos é essencialmente reativa. Isso significa
-                    que, em vez de executar um conjunto fixo de comandos, um programa
-                    espera por eventos, que podem ser ações do usuário, mudanças de estado
-                    em um sistema ou mensagens de outros programas, para então reagir a
-                    eles.<br>
-                    Um ditado muito usado para representar esse paradigma é o <b>Princípio de
-                    Hollywood:</b> “Não nos chame; nós chamaremos você.”<br>
-                    Imagine um aplicativo de calendário. Em vez de seguir um fluxo linear de
-                    comandos, ele aguarda ações como &quot;adicionar um evento&quot; ou &quot;remover
-                    um lembrete&quot;. Quando o usuário clica em &quot;adicionar&quot;, um evento é
-                    disparado, e o aplicativo responde a esse evento de maneira apropriada,
-                    atualizando a interface do usuário.</small>
+                  <small>O paradigma de programação orientado a eventos é uma abordagem onde o fluxo de
+                    controle do programa é guiado pela ocorrência de eventos externos, como cliques de
+                    mouse ou mensagens de outros programas. Segundo Simon Thompson, paradigmas
+                    de programação são técnicas que representam situações do mundo real ou imaginário
+                    em um computador, permitindo diferentes formas de resolver problemas. Robert W.
+                    Sebesta complementa essa ideia, destacando que esses paradigmas possibilitam a
+                    resolução de problemas utilizando abstrações variadas. <br><br>
+                    As linguagens de programação podem ser agrupadas em quatro paradigmas
+                    principais: imperativo, lógico, funcional e orientado a objetos. O paradigma imperativo
+                    se baseia na arquitetura de Von Neumann e é amplamente aceito, mas tem limitações.
+                    Já o paradigma funcional, exemplificado por linguagens como Haskell e LISP, utiliza
+                    funções matemáticas e evita variáveis. O paradigma lógico, por sua vez, usa lógica
+                    simbólica para resolver problemas, como demonstrado na linguagem Prolog. O
+                    paradigma orientado a objetos organiza o software em objetos, com métodos e
+                    atributos, facilitando a interação entre eles. <br><br>
+                    O desenvolvimento do paradigma orientado a eventos não pode ser atribuído a um
+                    único criador, mas suas raízes podem ser rastreadas até as interfaces gráficas de
+                    usuário (GUIs) na década de 1980, com linguagens como Smalltalk. Alan Kay, um dos
+                    criadores do Smalltalk, foi fundamental na introdução da programação orientada a
+                    objetos e eventos, criando ambientes de programação que facilitam essa interação.<br><br>
+                    David Luckham é considerado um pioneiro na programação orientada a eventos,
+                    definindo-a como um paradigma onde o controle do programa é acionado por eventos
+                    externos. Em seu livro “The Power of Events”, ele discute como eventos podem ser
+                    usados para monitorar e responder a situações complexas em sistemas distribuídos.
+                    Luckham também é reconhecido por seu trabalho em processamento de eventos
+                    complexos.<br><br>
+                    Outra contribuição significativa ao paradigma vem de Gérard Berry, conhecido por sua
+                    pesquisa em programação reativa síncrona com a linguagem Esterel. Berry argumenta
+                    que a programação orientada a eventos permite a criação de sistemas interativos que
+                    reagem continuamente a estímulos do ambiente, garantindo uma interação confiável
+                    com usuários e outros sistemas. Essa abordagem tem se tornado cada vez mais
+                    relevante em aplicações que exigem respostas em tempo real</small>
                 </h2>
               </div>
               <br>
@@ -584,17 +601,21 @@
                   </div>
                     <div class="col-md-15 ml-auto">
                       <div class="typography">
+                        <h3>
+                          Algumas vantagens do paradigma orientado a eventos são:
+                        </h3>
                         <h2>
                           <br>
-                          1. <small></small>
+                          1. Desacoplamento: <small>Os produtores e consumidores de eventos são desacoplados, o que proporciona maior flexibilidade para o funcionamento da aplicação.
+                          </small>
                           <br>
-                          2. <small></small>
+                          2. Escalabilidade:  <small>A arquitetura orientada a eventos pode lidar com cargas de trabalho grandes e de alta demanda.
+                          </small>
                           <br>
-                          3. <small></small>
+                          3. Resiliência: <small>A arquitetura de eventos é resiliente a falhas.
+                          </small>
                           <br>
-                          4. <small></small>
-                          <br>
-                          5. <small></small>
+                          4. Atuação em tempo real: <small>A arquitetura orientada a eventos reage rapidamente aos eventos.</small>
                         </h2>
                       </div>
                     </div>
@@ -730,7 +751,7 @@
         </div>
       </div> 
 
-      <div class="wrapper">
+      <div class="wrapper" id="linguagem">
         <div class="page-header">
           <img src="assets/img/blob.png" class="path">
           <img src="assets/img/waves.png" class="shapes wave">
@@ -949,7 +970,7 @@ namespace CompararNumeros
 
 
 
-      <div class="section section-basic" id="basic-elements">
+      <div class="section section-basic" id="basic-elements artigo">
         <img src="assets/img/path1.png" class="path">
         <div class="container">
           <div class="content-center">
@@ -1106,7 +1127,7 @@ namespace CompararNumeros
         </div>
       </div>
 
-      <div class="section section-pagination">
+      <div class="section section-pagination" id="software">
         <img src="assets/img/path4.png" class="path">
         <div class="container">
           <div class="typography">
@@ -1169,7 +1190,7 @@ namespace CompararNumeros
 
 
 
-      <div class="section section-nucleo-icons">
+      <div class="section section-nucleo-icons" id="referencias">
         <img src="assets/img/path3.png" class="path">
         <div class="container">
           <div class="row justify-content-center">
@@ -1185,7 +1206,17 @@ namespace CompararNumeros
                 - <a href="https://pipeless.blogspot.com/2009/03/orientacao-eventos-versus-orientacao.html">PIPELESS. Orientação a eventos versus orientação a...</a><br>
                 - <a href="https://www.youtube.com/watch?v=axJ_aHjyxQ8">YOUTUBE. Vídeo sobre programação orientada a eventos.</a><br>
                 - <a href="https://www.linkedin.com/pulse/arquitetura-orientada-eventos-n%C3%A3o-%C3%A9-mais-opcional-diego-magalh%C3%A3es/">Arquitetura orientada a eventos. Não é mais opcional</a>
+                - <a href="">Simon Thompson, Haskell the Craft of Functional Programming.</a>
+                - <a href="">David Luckham, Copilot: Tudo sobre David Luckham.</a>
+                - <a href="">Robert W. Sebesta, Conceitos de Linguagens de Programação</a>
+                - <a href="https://sheilacaceres.com/courses/pl/aula9/PL-9-ParadigmaEventos.pdf">https://sheilacaceres.com/courses/pl/aula9/PL-9-ParadigmaEventos.pdf</a>
+                - <a href="https://dev.to/felipedsc/observables-como-funcionam-15eb">Observables</a>
+                - <a href="https://en.wikipedia.org/wiki/Inversion_of_control">IoC</a>
+                - <a href="https://www.ibm.com/br-pt/topics/event-driven-architecture">Arquitetura orientada por eventos</a>
+                - <a href="https://www.redhat.com/pt-br/topics/integration/what-is-event-driven-architecture"> Arquitetura orientada a eventos</a>
+
               </h4>
+
               <br><br>
               <h4 class="description">
                 <div>
@@ -1235,22 +1266,27 @@ namespace CompararNumeros
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#basic-elements" class="nav-link">
                     Paradigma
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#linguagem" class="nav-link">
                     Linguagem
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#basic-elements artigo" class="nav-link">
                     Artigo
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#referencias" class="nav-link">
+                    Referências
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#software" class="nav-link">
                     Software e Empresas que utilizam
                   </a>
                 </li>
