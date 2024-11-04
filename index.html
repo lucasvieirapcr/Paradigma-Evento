@@ -833,6 +833,66 @@ private void btnCadastrar_Click(object sender, EventArgs e)
                 </pre>
               </div>
             </div>
+            <br>
+            <ul>
+              <li style="font-size: 25px; color: #e14eca;">Eventos e Delegados</li>
+              <img src="assets/img/path1.png" class="path">
+            </ul>
+            <div class="typography">
+              <h2>
+                <small>No contexto da programação orientada a eventos, eventos são sinais que
+                  indicam que algo ocorreu. Por exemplo, um evento pode ser o clique de
+                  um botão ou a finalização de um download.<br>
+                  Delegados são uma forma de encapsular referências a métodos. Em
+                  linguagens como C#, um delegado pode ser visto como um ponteiro de
+                  função que permite que métodos sejam passados como parâmetros.<br>
+                  Exemplo Prático: Em C#, você pode ter um delegado que é acionado
+                  quando um botão é clicado. O método que lida com o evento é associado
+                  ao delegado, permitindo que a ação correta seja executada quando o
+                  evento ocorre.</small>
+              </h2>
+            </div>
+            <br>
+            <div class="container mt-12">
+              <pre class="p-2 bg-dark text-light rounded" style="font-size: 1.2rem;">
+                <code class="language-csharp">
+public delegate void EventoDeMensagem(string mensagem);
+
+public class Publicador
+{
+public event EventoDeMensagem MensagemEnviada;
+                  
+public void EnviarMensagem(string mensagem)
+{
+  MensagemEnviada?.Invoke(mensagem); // Invoca o evento se houver inscritos
+}
+}
+                  
+public class Assinante
+{
+  public void ExibirMensagem(string mensagem)
+  {
+    Console.WriteLine("Mensagem recebida: " + mensagem);
+  }
+}
+                  
+class Program
+{
+  static void Main()
+  {
+    Publicador publicador = new Publicador();
+    Assinante assinante = new Assinante();
+                  
+                          // Inscrição do método no evento
+    publicador.MensagemEnviada += assinante.ExibirMensagem;
+                  
+    publicador.EnviarMensagem("Hello, World!"); // Dispara o evento
+  }
+}
+                  
+                </code>
+              </pre>
+            </div>
             <br><br>
             <div class="col-md-15 ml-auto">
               <div class="mb-5">
@@ -885,66 +945,6 @@ namespace CompararNumeros
                     No código acima, a sintaxe pode estar correta, mas a semântica deve fazer sentido. Se você escreveu if (numero < 5), mas quer que a mensagem "Maior que 5" apareça para números maiores que 5, isso é um erro semântico.
                   </small>
                 </h2>
-              </div>
-              <br>
-              <ul>
-                <li style="font-size: 25px; color: #e14eca;">Eventos e Delegados</li>
-                <img src="assets/img/path1.png" class="path">
-              </ul>
-              <div class="typography">
-                <h2>
-                  <small>No contexto da programação orientada a eventos, eventos são sinais que
-                    indicam que algo ocorreu. Por exemplo, um evento pode ser o clique de
-                    um botão ou a finalização de um download.<br>
-                    Delegados são uma forma de encapsular referências a métodos. Em
-                    linguagens como C#, um delegado pode ser visto como um ponteiro de
-                    função que permite que métodos sejam passados como parâmetros.<br>
-                    Exemplo Prático: Em C#, você pode ter um delegado que é acionado
-                    quando um botão é clicado. O método que lida com o evento é associado
-                    ao delegado, permitindo que a ação correta seja executada quando o
-                    evento ocorre.</small>
-                </h2>
-              </div>
-              <br>
-              <div class="container mt-12">
-                <pre class="p-2 bg-dark text-light rounded" style="font-size: 1.2rem;">
-                  <code class="language-csharp">
-public delegate void EventoDeMensagem(string mensagem);
-
-public class Publicador
-{
-  public event EventoDeMensagem MensagemEnviada;
-                    
-  public void EnviarMensagem(string mensagem)
-  {
-    MensagemEnviada?.Invoke(mensagem); // Invoca o evento se houver inscritos
-  }
-}
-                    
-public class Assinante
-  {
-    public void ExibirMensagem(string mensagem)
-    {
-      Console.WriteLine("Mensagem recebida: " + mensagem);
-    }
-  }
-                    
-class Program
-  {
-    static void Main()
-    {
-      Publicador publicador = new Publicador();
-      Assinante assinante = new Assinante();
-                    
-                            // Inscrição do método no evento
-      publicador.MensagemEnviada += assinante.ExibirMensagem;
-                    
-      publicador.EnviarMensagem("Hello, World!"); // Dispara o evento
-    }
-  }
-                    
-                  </code>
-                </pre>
               </div>
               <br>
               <div class="typography">
