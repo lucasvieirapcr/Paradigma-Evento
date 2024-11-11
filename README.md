@@ -20,7 +20,7 @@ Este repositório foi criado para a apresentação de um projeto acadêmico sobr
 * Sintaxe e Semântica
 
 ### Artigo
-[Stack Overflow] (https://survey.stackoverflow.co/2024/technology/) - Tecnologias mais populares
+[Stack Overflow](https://survey.stackoverflow.co/2024/technology/) - Tecnologias mais populares
 
 # Como rodar esse projeto
 1. Cloe este repositório: git clone https://github.com/lucasvieirapcr/Paradigma-Evento/
