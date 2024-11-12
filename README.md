@@ -35,10 +35,11 @@ Este repositório foi criado para a apresentação de um projeto acadêmico sobr
 
 # Integrantes do nosso grupo
 1. Lucas Vieira Gonçalves - 29118000
-2. Matheus William Motta Santos - 29351219
-3. Kauan Rodrigues Macedo - 36100986
+2. Matheus William Motta Santos - 29351219 
+3. Kauan Rodrigues Macedo(https://github.com/DrOwN61) - 31677711
 4. Francisco Alano Lima da Silva - 31167420
 5. Gabriel Freitas dos Santos - 30259177
+6. [Filipe Matheus Cabral da Silva](https://github.com/filipecab) - 36100986
 
 # QR Code do site do Projeto
 ![frame](https://github.com/user-attachments/assets/d9573107-08ce-418e-a354-10da0af7d432)
