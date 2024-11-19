@@ -33,7 +33,7 @@ Este repositório foi criado para a apresentação de um projeto acadêmico sobr
 * BOOTSTRAP
 * C#
 
-#O repositório do jogo esta aqui: https://github.com/Aladark/JOGO-
+# O repositório do jogo esta aqui: https://github.com/Aladark/JOGO-
 
 # Integrantes do nosso grupo
 1. Lucas Vieira Gonçalves - 29118000
